@@ -111,7 +111,7 @@ class ProdutoRegisterViewController: UIViewController {
 extension ProdutoRegisterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     //O método abaixo nos trará a imagem selecionada pelo usuário em seu tamanho original
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String: AnyObject]?) {
+   @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String: AnyObject]?) {
         
         //Iremos usar o código abaixo para criar uma versão reduzida da imagem escolhida pelo usuário
         let smallSize = CGSize(width: 300, height: 280)
@@ -122,7 +122,7 @@ extension ProdutoRegisterViewController: UIImagePickerControllerDelegate, UINavi
         smallImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        ivImagem.image = smallImage //Atribuindo a imagem à ivPoster
+        ivImagem.image = smallImage
         
         //Aqui efetuamos o dismiss na UIImagePickerController, para retornar à tela anterior
         dismiss(animated: true, completion: nil)

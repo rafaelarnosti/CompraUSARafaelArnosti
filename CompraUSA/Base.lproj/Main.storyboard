@@ -30,6 +30,7 @@
                                             <rect key="frame" x="8" y="0.0" width="70" height="113.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="70" id="KY3-SU-42R"/>
+                                                <constraint firstAttribute="height" constant="113.5" id="t6Q-Sq-y86"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9M3-kt-p5S">
@@ -219,7 +220,7 @@
         <!--Total da Compra-->
         <scene sceneID="unM-3V-5vS">
             <objects>
-                <viewController id="CBx-La-gUK" sceneMemberID="viewController">
+                <viewController id="CBx-La-gUK" customClass="TotalViewController" customModule="CompraUSA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hsn-E8-wtg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -266,7 +267,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NUb-6n-Bud"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Total da Compra" id="Yzx-Xr-PMM"/>
+                    <tabBarItem key="tabBarItem" title="Total da Compra" image="shopping-bag" id="Yzx-Xr-PMM"/>
+                    <connections>
+                        <outlet property="lbValorProduto" destination="mos-op-JaA" id="v2o-Ij-dlu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="miC-1f-xrD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -276,7 +280,7 @@
         <scene sceneID="iMq-uI-vao">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2va-Ow-9XT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Compras" image="shopping-bag.png" id="zp9-Bd-ATi"/>
+                    <tabBarItem key="tabBarItem" title="Compras" image="shopping-bag" id="zp9-Bd-ATi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aWM-xp-mF0">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -389,7 +393,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jjK-H6-0YO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Ajustes" image="mechanical-gears-.png" id="p0f-Bf-M4y"/>
+                    <tabBarItem key="tabBarItem" title="Ajustes" image="mechanical-gears-" id="p0f-Bf-M4y"/>
                     <connections>
                         <outlet property="EstadoTableView" destination="QZf-EB-wze" id="U7e-dY-0q5"/>
                         <outlet property="tfCotDol" destination="3Jg-1y-7Iv" id="1Ej-9O-1mK"/>
@@ -402,8 +406,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="mechanical-gears-.png" width="24" height="24"/>
-        <image name="shopping-bag.png" width="16" height="16"/>
+        <image name="mechanical-gears-" width="24" height="24"/>
+        <image name="shopping-bag" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="LJa-2q-zAe"/>

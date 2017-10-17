@@ -14,6 +14,7 @@
 		530910341F9157980082CB3E /* ProdutoRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530910331F9157980082CB3E /* ProdutoRegisterViewController.swift */; };
 		530910361F9168CB0082CB3E /* EstadoRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530910351F9168CB0082CB3E /* EstadoRegisterViewController.swift */; };
 		539EFC021F9570AE00D12295 /* ProdutoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539EFC011F9570AE00D12295 /* ProdutoViewCell.swift */; };
+		539EFC041F96C5AE00D12295 /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539EFC031F96C5AE00D12295 /* TotalViewController.swift */; };
 		53CBD5A31F818A6700E32555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CBD5A21F818A6700E32555 /* AppDelegate.swift */; };
 		53CBD5A51F818A6700E32555 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CBD5A41F818A6700E32555 /* ViewController.swift */; };
 		53CBD5A81F818A6700E32555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53CBD5A61F818A6700E32555 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		530910331F9157980082CB3E /* ProdutoRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoRegisterViewController.swift; sourceTree = "<group>"; };
 		530910351F9168CB0082CB3E /* EstadoRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstadoRegisterViewController.swift; sourceTree = "<group>"; };
 		539EFC011F9570AE00D12295 /* ProdutoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoViewCell.swift; sourceTree = "<group>"; };
+		539EFC031F96C5AE00D12295 /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
 		53CBD59F1F818A6700E32555 /* CompraUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompraUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53CBD5A21F818A6700E32555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53CBD5A41F818A6700E32555 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				530910311F9150DA0082CB3E /* Settings.bundle */,
 				53CBD5A41F818A6700E32555 /* ViewController.swift */,
 				53CBD5A61F818A6700E32555 /* Main.storyboard */,
+				539EFC031F96C5AE00D12295 /* TotalViewController.swift */,
 				530910351F9168CB0082CB3E /* EstadoRegisterViewController.swift */,
 				530910331F9157980082CB3E /* ProdutoRegisterViewController.swift */,
 				53CBD5A91F818A6700E32555 /* Assets.xcassets */,
@@ -186,6 +189,7 @@
 				53CBD5A31F818A6700E32555 /* AppDelegate.swift in Sources */,
 				530910361F9168CB0082CB3E /* EstadoRegisterViewController.swift in Sources */,
 				5309102C1F914A4A0082CB3E /* CompraLib.xcdatamodeld in Sources */,
+				539EFC041F96C5AE00D12295 /* TotalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
