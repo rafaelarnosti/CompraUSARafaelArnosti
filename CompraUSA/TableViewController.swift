@@ -81,6 +81,19 @@ class TableViewController: UITableViewController {
         }
         return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let ViewController = segue.destination as? ProdutoRegisterViewController{
+            if let produto = sender as? Produto{
+                ViewController.produto = produto
+            }else{
+                ViewController.produto = nil
+            }
+        }
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "produto", sender: fetchedResultController.object(at: indexPath))
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 extension TableViewController: NSFetchedResultsControllerDelegate {
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {

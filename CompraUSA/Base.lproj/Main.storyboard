@@ -64,7 +64,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="qYC-TW-Zxy"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="PXR-Gu-6J4">
                             <connections>
-                                <segue destination="aXT-xN-eXp" kind="show" id="Zgz-8G-UDD"/>
+                                <segue destination="aXT-xN-eXp" kind="show" identifier="produto" id="Zgz-8G-UDD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -138,7 +138,7 @@
                                     <constraint firstAttribute="height" constant="35" id="ExH-en-bjk"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t7g-ia-f3d">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="produtopad" translatesAutoresizingMaskIntoConstraints="NO" id="t7g-ia-f3d">
                                 <rect key="frame" x="16" y="114" width="288" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="HO4-CP-7bC"/>
@@ -151,7 +151,7 @@
                                     <action selector="AddUpdateProduto:" destination="aXT-xN-eXp" eventType="touchUpInside" id="6ZE-E8-FF0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdG-2K-G3U">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdG-2K-G3U">
                                 <rect key="frame" x="16" y="112" width="288" height="244"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="mLC-18-DSu"/>
@@ -188,6 +188,7 @@
                     <connections>
                         <outlet property="btnAddUpdate" destination="47Y-zV-e9f" id="7Dv-PV-F7h"/>
                         <outlet property="ivImagem" destination="t7g-ia-f3d" id="WSu-yl-vuL"/>
+                        <outlet property="swCartao" destination="8IX-hD-ucN" id="hfC-gW-SPj"/>
                         <outlet property="tfEstado" destination="rsa-YJ-REZ" id="a4A-Uv-UDB"/>
                         <outlet property="tfNomeProduto" destination="ZXa-rH-sr9" id="0cf-jx-hdn"/>
                         <outlet property="tfValor" destination="p6E-Vr-zwR" id="aIU-Ns-H89"/>
@@ -270,6 +271,7 @@
                     <tabBarItem key="tabBarItem" title="Total da Compra" image="shopping-bag" id="Yzx-Xr-PMM"/>
                     <connections>
                         <outlet property="lbValorProduto" destination="mos-op-JaA" id="v2o-Ij-dlu"/>
+                        <outlet property="lbValorProdutoTrib" destination="jJt-jK-3KZ" id="YaQ-YY-MlZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="miC-1f-xrD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -304,25 +306,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cotação do dólar (R$):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tog-ED-7EV">
-                                <rect key="frame" x="14" y="48" width="174" height="21"/>
+                                <rect key="frame" x="14" y="92" width="174" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IOF(%):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="253-JW-mVg">
-                                <rect key="frame" x="131" y="75" width="57" height="21"/>
+                                <rect key="frame" x="131" y="119" width="57" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imposto por Estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWU-NN-bZa">
-                                <rect key="frame" x="77" y="113" width="165" height="21"/>
+                                <rect key="frame" x="77" y="157" width="165" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Jg-1y-7Iv">
-                                <rect key="frame" x="204" y="39" width="100" height="30"/>
+                                <rect key="frame" x="204" y="83" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="ELz-v5-dMt"/>
                                 </constraints>
@@ -331,7 +333,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PLv-bO-Jug">
-                                <rect key="frame" x="204" y="75" width="100" height="30"/>
+                                <rect key="frame" x="204" y="119" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="hgY-sf-jnR"/>
                                 </constraints>
@@ -347,7 +349,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QZf-EB-wze">
-                                <rect key="frame" x="16" y="142" width="288" height="315"/>
+                                <rect key="frame" x="16" y="186" width="288" height="271"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Xnd-Mb-NtV">
@@ -407,9 +409,10 @@
     </scenes>
     <resources>
         <image name="mechanical-gears-" width="24" height="24"/>
+        <image name="produtopad" width="240" height="300"/>
         <image name="shopping-bag" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LJa-2q-zAe"/>
+        <segue reference="Fo8-Kv-R7L"/>
     </inferredMetricsTieBreakers>
 </document>

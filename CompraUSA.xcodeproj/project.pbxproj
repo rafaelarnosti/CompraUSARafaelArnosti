@@ -29,6 +29,7 @@
 		530910311F9150DA0082CB3E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		530910331F9157980082CB3E /* ProdutoRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoRegisterViewController.swift; sourceTree = "<group>"; };
 		530910351F9168CB0082CB3E /* EstadoRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstadoRegisterViewController.swift; sourceTree = "<group>"; };
+		5373DB251F9B8BD300313AF4 /* produtopad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = produtopad.png; sourceTree = "<group>"; };
 		539EFC011F9570AE00D12295 /* ProdutoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoViewCell.swift; sourceTree = "<group>"; };
 		539EFC031F96C5AE00D12295 /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
 		53CBD59F1F818A6700E32555 /* CompraUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompraUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +103,7 @@
 		53CBD5B41F81A21B00E32555 /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				5373DB251F9B8BD300313AF4 /* produtopad.png */,
 				53CBD5B61F81A76000E32555 /* mechanical-gears-.png */,
 				53CBD5B51F81A24D00E32555 /* shopping-bag.png */,
 			);

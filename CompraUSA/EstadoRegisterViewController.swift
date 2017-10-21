@@ -33,6 +33,11 @@ class EstadoRegisterViewController: UIViewController {
         EstadoTableView.dataSource = self
         loadEstados()
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        UserDefaults.standard.set(tfCotDol.text, forKey: "cotdol")
+        UserDefaults.standard.set(tfiof.text, forKey: "iof")
+    }
 
     @IBAction func Add(_ sender: UIButton) {
         showAlert(type: .add, estado: nil)

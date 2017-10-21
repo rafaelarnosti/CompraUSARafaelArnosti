@@ -13,6 +13,7 @@ var fetchedResultController: NSFetchedResultsController<Produto>!
 
 class TotalViewController: UIViewController {
     @IBOutlet weak var lbValorProduto: UILabel!
+    @IBOutlet weak var lbValorProdutoTrib: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,10 +43,19 @@ class TotalViewController: UIViewController {
         if let count = fetchedResultController.fetchedObjects?.count {
             if count != 0 {
                 var Soma = 0.0
+                var Somatrib = 0.0
+                var valorTrib = 0.0
                 for  produtos in fetchedResultController.fetchedObjects!{
                     Soma = Soma + produtos.valor
+                    if(produtos.cartao){
+                        valorTrib = produtos.valor * UserDefaults.standard.double(forKey: "cotdol") * UserDefaults.standard.double(forKey: "iof") * (produtos.estado?.imposto)!
+                    }else{
+                        valorTrib = produtos.valor * UserDefaults.standard.double(forKey: "cotdol") * UserDefaults.standard.double(forKey: "iof")
+                    }
+                    Somatrib = Somatrib + valorTrib
                 }
                 lbValorProduto.text = "\(Soma)"
+                lbValorProdutoTrib.text = "\(Somatrib)"
             }
         }
     }
