@@ -27,14 +27,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Smd-xA-auW">
-                                            <rect key="frame" x="8" y="0.0" width="70" height="113.5"/>
+                                            <rect key="frame" x="8" y="0.0" width="120" height="113.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="70" id="KY3-SU-42R"/>
+                                                <constraint firstAttribute="width" constant="120" id="KY3-SU-42R"/>
                                                 <constraint firstAttribute="height" constant="113.5" id="t6Q-Sq-y86"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9M3-kt-p5S">
-                                            <rect key="frame" x="86" y="8" width="42" height="21"/>
+                                            <rect key="frame" x="136" y="8" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>

@@ -32,7 +32,7 @@
 		5373DB251F9B8BD300313AF4 /* produtopad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = produtopad.png; sourceTree = "<group>"; };
 		539EFC011F9570AE00D12295 /* ProdutoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoViewCell.swift; sourceTree = "<group>"; };
 		539EFC031F96C5AE00D12295 /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
-		53CBD59F1F818A6700E32555 /* CompraUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompraUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53CBD59F1F818A6700E32555 /* CompraUSARafaelArnosti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompraUSARafaelArnosti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53CBD5A21F818A6700E32555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53CBD5A41F818A6700E32555 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		53CBD5A71F818A6700E32555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		53CBD5A01F818A6700E32555 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				53CBD59F1F818A6700E32555 /* CompraUSA.app */,
+				53CBD59F1F818A6700E32555 /* CompraUSARafaelArnosti.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,9 +113,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		53CBD59E1F818A6700E32555 /* CompraUSA */ = {
+		53CBD59E1F818A6700E32555 /* CompraUSARafaelArnosti */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 53CBD5B11F818A6700E32555 /* Build configuration list for PBXNativeTarget "CompraUSA" */;
+			buildConfigurationList = 53CBD5B11F818A6700E32555 /* Build configuration list for PBXNativeTarget "CompraUSARafaelArnosti" */;
 			buildPhases = (
 				53CBD59B1F818A6700E32555 /* Sources */,
 				53CBD59C1F818A6700E32555 /* Frameworks */,
@@ -125,9 +125,9 @@
 			);
 			dependencies = (
 			);
-			name = CompraUSA;
+			name = CompraUSARafaelArnosti;
 			productName = CompraUSA;
-			productReference = 53CBD59F1F818A6700E32555 /* CompraUSA.app */;
+			productReference = 53CBD59F1F818A6700E32555 /* CompraUSARafaelArnosti.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -146,7 +146,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 53CBD59A1F818A6700E32555 /* Build configuration list for PBXProject "CompraUSA" */;
+			buildConfigurationList = 53CBD59A1F818A6700E32555 /* Build configuration list for PBXProject "CompraUSARafaelArnosti" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -159,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				53CBD59E1F818A6700E32555 /* CompraUSA */,
+				53CBD59E1F818A6700E32555 /* CompraUSARafaelArnosti */,
 			);
 		};
 /* End PBXProject section */
@@ -357,7 +357,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		53CBD59A1F818A6700E32555 /* Build configuration list for PBXProject "CompraUSA" */ = {
+		53CBD59A1F818A6700E32555 /* Build configuration list for PBXProject "CompraUSARafaelArnosti" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53CBD5AF1F818A6700E32555 /* Debug */,
@@ -366,7 +366,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		53CBD5B11F818A6700E32555 /* Build configuration list for PBXNativeTarget "CompraUSA" */ = {
+		53CBD5B11F818A6700E32555 /* Build configuration list for PBXNativeTarget "CompraUSARafaelArnosti" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53CBD5B21F818A6700E32555 /* Debug */,
